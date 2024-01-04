@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f7e8d83e3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="full">
+      <div class="navBar">
+        <div class="back">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <p class="playing">Now Playing</p>
+        <div class="icons">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="menu">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+      </div>
+      <div class="mbody">
+        <img class="cover" id="scover" src="./assets/0.jpg" alt="music cover" />
+        <div class="songStat">
+          <p class="songName" id="songn">Alan walker-Faded</p>
+        </div>
+        <div class="songTime">
+          <p class="stime">2:45</p>
+          <input
+            class="songRange"
+            type="range"
+            id="myProgress"
+            min="0"
+            value="'0"
+            max="100"
+          />
+          <p class="stime">4:59</p>
+        </div>
+      </div>
+      <div class="songPlay">
+        <div class="shuffle">
+          <i class="fa-solid fa-shuffle" id="shuffles"></i>
+        </div>
+        <div class="previous">
+          <i class="fa-solid fa-backward-step" id="prev"></i>
+        </div>
+        <div class="play">
+          <i class="fa-solid fa-circle-play" id="masterPlay"></i>
+        </div>
+        <div class="next">
+          <i class="fa-solid fa-forward-step" id="nex"></i>
+        </div>
+        <div class="repeat"><i class="fa-solid fa-repeat"></i></div>
+      </div>
+      <div class="tail">
+        <div class="songList">
+          <p class="rsong">Recomended Songs</p>
+          <div class="nextSong">
+            <div class="nameAtitle">
+              <img class="scover" />
+              <div class="nameAartist">
+                <p class="songNames">Faded</p>
+                <p class="artist">Alan Walker</p>
+              </div>
+            </div>
+            <div class="plays">
+              <i class="fa-regular fa-circle-play slavePlay" id="0"></i>
+            </div>
+          </div>
+          <div class="nextSong">
+            <div class="nameAtitle">
+              <img class="scover" />
+              <div class="nameAartist">
+                <p class="songNames">Shape Of You</p>
+                <p class="artist">Ed Sheeran</p>
+              </div>
+            </div>
+            <div class="plays">
+              <i class="fa-regular fa-circle-play slavePlay" id="1"></i>
+            </div>
+          </div>
+          <div class="nextSong">
+            <div class="nameAtitle">
+              <img class="scover" />
+              <div class="nameAartist">
+                <p class="songNames">Lost In Japan</p>
+                <p class="artist">Shawn Mendes</p>
+              </div>
+            </div>
+            <div class="plays">
+              <i class="fa-regular fa-circle-play slavePlay" id="2"></i>
+            </div>
+          </div>
+          <div class="nextSong">
+            <div class="nameAtitle">
+              <img class="scover" />
+              <div class="nameAartist">
+                <p class="songNames">Senorita</p>
+                <p class="artist">Unknown</p>
+              </div>
+            </div>
+            <div class="plays">
+              <i class="fa-regular fa-circle-play slavePlay" id="3"></i>
+            </div>
+          </div>
+          <div class="nextSong">
+            <div class="nameAtitle">
+              <img class="scover" />
+              <div class="nameAartist">
+                <p class="songNames">Baarishein</p>
+                <p class="artist">Anuv Jain</p>
+              </div>
+            </div>
+            <div class="plays">
+              <i class="fa-regular fa-circle-play slavePlay" id="4"></i>
+            </div>
+          </div>
+          <div class="nextSong">
+            <div class="nameAtitle">
+              <img class="scover" />
+              <div class="nameAartist">
+                <p class="songNames">Alag Aasmaan</p>
+                <p class="artist">Anuv Jain</p>
+              </div>
+            </div>
+            <div class="plays">
+              <i class="fa-regular fa-circle-play slavePlay" id="5"></i>
+            </div>
+          </div>
+          <div class="nextSong">
+            <div class="nameAtitle">
+              <img class="scover" />
+              <div class="nameAartist">
+                <p class="songNames">Stand By Me</p>
+                <p class="artist">Ben E King</p>
+              </div>
+            </div>
+            <div class="plays">
+              <i class="fa-regular fa-circle-play slavePlay" id="6"></i>
+            </div>
+          </div>
+          <div class="nextSong">
+            <div class="nameAtitle">
+              <img class="scover" />
+              <div class="nameAartist">
+                <p class="songNames">Naina Da Kya Kasoor</p>
+                <p class="artist">Unknown</p>
+              </div>
+            </div>
+            <div class="plays">
+              <i class="fa-regular fa-circle-play slavePlay" id="7"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="home">
+          <i class="fa-solid fa-house"></i>
+          <p class="bbar">Home</p>
+        </div>
+        <div class="home">
+          <i class="fa-regular fa-compass"> </i>
+          <p class="bbar">Discover</p>
+        </div>
+        <div class="home">
+          <i class="fa-regular fa-heart"></i>
+          <p class="bbar">Liked</p>
+        </div>
+        <div class="home">
+          <i class="fa-regular fa-user"></i>
+          <p class="bbar">Profile</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
